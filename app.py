@@ -8,6 +8,8 @@ cols = ['Life Expectancy', 'Population', 'GDP per Capita']
 gapminder = gapminder.query('year == 2007')
 
 app = Dash(__name__,  external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
+server = app.server
+
 app.layout = html.Div([
     html.Div('A little widget', style={'fontSize': 44}),
     html.P('This tool is to show the box plots of the Gapminder dataset in 2007 in the view of continents with different indicators including life expectancy, population, and GDP per capita.', style={'marginTop': 50}),
