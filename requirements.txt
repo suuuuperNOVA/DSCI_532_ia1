@@ -2,5 +2,5 @@ pandas
 gunicorn
 altair
 dash
-dash_bootstrap_components'
+dash_bootstrap_components
 gapminder
